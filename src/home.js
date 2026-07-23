@@ -9,13 +9,16 @@ function generateHomepage() {
   nav.before(headName);
 
   const mainTextDiv = document.createElement("div");
-  mainTextDiv.classList.add("main-text");
+  mainTextDiv.classList.add("main-text-div");
   const h1Text = document.createElement("h1");
   h1Text.textContent = "The Nordic grill";
+  h1Text.classList.add("h1-text");
   const pText = document.createElement("p");
   pText.textContent = "An authentic Nordic feast of flame-kissed meats and wild herbs, crafted for the ultimate carnivore experience.";
+  pText.classList.add("p-text");
   const exploreButton = document.createElement("button");
   exploreButton.textContent = "Explore Menu";
+  exploreButton.classList.add("explore-button");
   mainTextDiv.appendChild(h1Text);
   mainTextDiv.appendChild(pText);
   mainTextDiv.appendChild(exploreButton);
