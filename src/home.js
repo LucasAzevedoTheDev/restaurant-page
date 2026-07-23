@@ -22,7 +22,7 @@ function generateHomepage() {
 
   searchWrapper.appendChild(searchInput);
   searchWrapper.appendChild(searchIcon);
-  nav.appendChild(searchWrapper);
+  header.appendChild(searchWrapper);
   
   const mainTextDiv = document.createElement("div");
   mainTextDiv.classList.add("main-text-div");
