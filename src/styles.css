@@ -51,3 +51,12 @@ nav {
   width: 300px;
 }
 
+#content {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+}
+
+.main-text-div {
+  background-color: red;
+}
