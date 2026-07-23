@@ -1,4 +1,4 @@
-import mainPlateImgSrc from "../photos/meat.png";
+import mainPlateImgSrc from "../photos/main-plate.png";
 const containerDiv = document.querySelector("#content");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
@@ -44,6 +44,7 @@ function generateHomepage() {
   mainTextDiv.appendChild(exploreButton);
 
   const mainPlateImg = document.createElement("img");
+  mainPlateImg.classList.add("main-plate-img");
   mainPlateImg.src = mainPlateImgSrc;
   mainPlateImg.alt = "plate of meat";
 
