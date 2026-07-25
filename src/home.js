@@ -10,6 +10,7 @@ function generateHomepage() {
 
   const headName = document.createElement("h2");
   headName.textContent = "Hoplon";
+  headName.classList.add("head-name");
   nav.before(headName);
 
   const searchWrapper = document.createElement("div");
