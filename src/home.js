@@ -31,6 +31,9 @@ function generateHomepage() {
   const mainTextDiv = document.createElement("div");
   mainTextDiv.classList.add("main-text-div");
 
+  const mainTextDivWrapper = document.createElement("div");
+  mainTextDivWrapper.classList.add("main-text-div-wrapper");
+
   const h1Text = document.createElement("h1");
   h1Text.textContent = "The Nordic grill";
   h1Text.classList.add("h1-text");
@@ -43,9 +46,10 @@ function generateHomepage() {
   exploreButton.textContent = "Explore Menu";
   exploreButton.classList.add("explore-button");
 
-  mainTextDiv.appendChild(h1Text);
-  mainTextDiv.appendChild(pText);
-  mainTextDiv.appendChild(exploreButton);
+  mainTextDivWrapper.appendChild(h1Text);
+  mainTextDivWrapper.appendChild(pText);
+  mainTextDivWrapper.appendChild(exploreButton);
+  mainTextDiv.appendChild(mainTextDivWrapper);
 
   const mainPlateImg = document.createElement("img");
   mainPlateImg.classList.add("main-plate-img");
