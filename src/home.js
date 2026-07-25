@@ -51,13 +51,17 @@ function generateHomepage() {
   mainTextDivWrapper.appendChild(exploreButton);
   mainTextDiv.appendChild(mainTextDivWrapper);
 
+  const mainPlateDiv = document.createElement("div");
+  mainPlateDiv.classList.add("main-plate-div");
+
   const mainPlateImg = document.createElement("img");
   mainPlateImg.classList.add("main-plate-img");
   mainPlateImg.src = mainPlateImgSrc;
   mainPlateImg.alt = "plate of meat";
+  mainPlateDiv.appendChild(mainPlateImg);
 
   containerDiv.appendChild(mainTextDiv);
-  containerDiv.appendChild(mainPlateImg);
+  containerDiv.appendChild(mainPlateDiv);
 }
 
 export {generateHomepage};
