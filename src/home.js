@@ -1,9 +1,13 @@
 import mainPlateImgSrc from "../photos/main-plate.png";
-const containerDiv = document.querySelector("#content");
+const contentDiv = document.querySelector("#content");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 
 function generateHomepage() {
+  const containerDiv = document.createElement("div");
+  containerDiv.classList.add("container-div");
+  contentDiv.appendChild(containerDiv);
+
   const headName = document.createElement("h2");
   headName.textContent = "Hoplon";
   nav.before(headName);
