@@ -5,3 +5,5 @@ const nav = document.querySelector("nav");
 function generateMenu() {
   contentDiv.innerHTML = "";
 }
+
+export {generateMenu}
