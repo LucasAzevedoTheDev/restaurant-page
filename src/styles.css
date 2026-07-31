@@ -94,10 +94,6 @@ nav button:hover {
     fill: #ff7b00;
 }
 
-.main-plate-img {
-  width: 300px;
-}
-
 #content {
   height: 83vh;
   width: 100%;
@@ -127,6 +123,7 @@ nav button:hover {
   margin-top: -40px;
   background-color: #1a1a1a;
   height: 60%;
+  min-width: 530px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -176,8 +173,9 @@ nav button:hover {
 }
 
 .main-plate-img {
-  width: 100%;
+  max-width: 680px;
   height: 100%;
+  margin-left: 90px;
 }
 
 footer {
