@@ -4,6 +4,11 @@ const nav = document.querySelector("nav");
 
 function generateMenu() {
   contentDiv.innerHTML = "";
+  
+  // Reset #content style
+  contentDiv.style.display = "block";
+  contentDiv.style.alignItems = "initial";
+  contentDiv.style.justifyContent = "initial";
 
   const menuContainer = document.createElement("div");
   menuContainer.classList.add("menu-container");
