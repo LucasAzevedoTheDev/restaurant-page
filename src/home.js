@@ -4,6 +4,10 @@ const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 
 function generateHomepage() {
+  contentDiv.style.display = "flex";
+  contentDiv.style.alignItems = "center";
+  contentDiv.style.justifyContent = "center";
+  
   const containerDiv = document.createElement("div");
   containerDiv.classList.add("container-div");
   contentDiv.appendChild(containerDiv);
