@@ -16,7 +16,6 @@ function generateMenu() {
 
   const headerDiv = document.createElement("div");
   headerDiv.classList.add("menu-header");
-  menuContainer.appendChild(headerDiv);
 
   const h1Text = document.createElement("h1");
   h1Text.textContent = "The Nordic Menu";
@@ -26,6 +25,15 @@ function generateMenu() {
 
   headerDiv.appendChild(h1Text);
   headerDiv.appendChild(menuSubtitle);
+
+  const menuFirstSection = document.createElement("div");
+  menuFirstSection.classList.add("menu-first-section");
+
+  const firstSectionPlate = document.createElement(div);
+  firstSectionPlate.classList.add("first-section-plate");
+
+  menuContainer.appendChild(headerDiv);
+  menuContainer.appendChild(menuFirstSection);
 }
 
 export {generateMenu}
