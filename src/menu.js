@@ -4,7 +4,7 @@ const nav = document.querySelector("nav");
 
 function generateMenu() {
   contentDiv.innerHTML = "";
-  
+
   // Reset #content style
   contentDiv.style.display = "block";
   contentDiv.style.alignItems = "initial";
@@ -20,7 +20,12 @@ function generateMenu() {
 
   const h1Text = document.createElement("h1");
   h1Text.textContent = "The Nordic Menu";
+
+  const menuSubtitle = document.createElement("p");
+  menuSubtitle.textContent = "Handpicked prime cuts, seared over open fire and finished with rustic spices.";
+
   headerDiv.appendChild(h1Text);
+  headerDiv.appendChild(menuSubtitle);
 }
 
 export {generateMenu}
