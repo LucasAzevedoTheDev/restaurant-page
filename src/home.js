@@ -2,6 +2,7 @@ import mainPlateImgSrc from "../photos/main-plate.png";
 const contentDiv = document.querySelector("#content");
 
 function generateHomepage() {
+  contentDiv.style.cssText = "";
   contentDiv.innerHTML = "";
   
   const containerDiv = document.createElement("div");

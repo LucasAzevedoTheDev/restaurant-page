@@ -32,21 +32,23 @@ function generateHeader() {
 generateHeader();
 generateHomepage();
 
+const contentDiv = document.querySelector("#content");
+contentDiv.addEventListener("click", (event) => {
+  if (event.target.classList.contains("explore-button")) {
+      generateMenu();
+      menuButton.classList.add("active-button");
+
+      //RESET OTHER BUTTONS 
+      homeButton.classList.remove("active-button");
+      aboutButton.classList.remove("active-button");
+      contactButton.classList.remove("active-button");
+    }
+});
+
 const homeButton = document.querySelector(".home-button");
 const menuButton = document.querySelector(".menu-button");
 const aboutButton = document.querySelector(".about-button");
 const contactButton = document.querySelector(".contact-button");
-
-const exploreButton = document.querySelector(".explore-button");
-exploreButton.addEventListener("click", () => {
-  generateMenu();
-  menuButton.classList.add("active-button");
-  
-  //RESET OTHER BUTTONS 
-  homeButton.classList.remove("active-button");
-  aboutButton.classList.remove("active-button");
-  contactButton.classList.remove("active-button");
-});
 
 menuButton.addEventListener("click", () => {
   generateMenu();
@@ -78,4 +80,8 @@ contactButton.addEventListener("click", () => {
 homeButton.addEventListener("click", () => {
   generateHomepage();
   homeButton.classList.add("active-button");
+
+  contactButton.classList.remove("active-button");
+  menuButton.classList.remove("active-button");
+  aboutButton.classList.remove("active-button");
 })
