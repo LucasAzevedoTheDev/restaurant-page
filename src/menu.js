@@ -204,6 +204,10 @@ function generateMenu() {
   thirdSectionH2.textContent = "Section 3: Elixirs & Potions";
   thirdSection.appendChild(thirdSectionH2);
 
+  const thirdSectionPlatesDiv = document.createElement("div");
+  thirdSectionPlatesDiv.classList.add("plates-container");
+  thirdSection.appendChild(thirdSectionPlatesDiv);
+
   const thirdSectionPlate1 = document.createElement("div");
   thirdSectionPlate1.classList.add("section-plate");
 
@@ -261,9 +265,9 @@ function generateMenu() {
   thirdSectionPlate3.appendChild(thirdSectionPlate3Description);
   thirdSectionPlate3.appendChild(thirdSectionPlate3Price);
 
-  thirdSection.appendChild(thirdSectionPlate1);
-  thirdSection.appendChild(thirdSectionPlate2);
-  thirdSection.appendChild(thirdSectionPlate3);
+  thirdSectionPlatesDiv.appendChild(thirdSectionPlate1);
+  thirdSectionPlatesDiv.appendChild(thirdSectionPlate2);
+  thirdSectionPlatesDiv.appendChild(thirdSectionPlate3);
   menuContainer.appendChild(thirdSection);
 }
 
