@@ -43,8 +43,36 @@ function generateContact() {
   contactCard1.appendChild(contactCard1P1);
   contactCard1.appendChild(contactCard1P2);
   contactCard1.appendChild(contactCard1P3);
-  contactContainer.appendChild(contactCard1);
+
+  const contactCard2 = document.createElement("div");
   
+  const contactCard2Head = document.createElement("h3");
+  contactCard2Head.textContent = "Reservations & Support";
+
+  const contactCard2P1 = document.createElement("p");
+  contactCard2P1.textContent = "Phone: +1 (555) 839-2046";
+
+  const contactCard2P2 = document.createElement("p");
+  contactCard2P2.textContent = "Email: reservations@hoplon-steakhouse.com";
+
+  contactCard2.appendChild(contactCard2Head);
+  contactCard2.appendChild(contactCard2P1);
+  contactCard2.appendChild(contactCard2P2);
+
+  const contactCard3 = document.createElement("div");
+  
+  const contactCard3Head = document.createElement("h3");
+  contactCard3Head.textContent = "Private Gatherings";
+
+  const contactCard3P = document.createElement("p");
+  contactCard3P.textContent = "Planning a feast for your clan? We offer full-house rentals for private celebrations and large groups. Contact us directly via email.";
+
+  contactCard3.appendChild(contactCard3Head);
+  contactCard3.appendChild(contactCard3P);
+
+  contactContainer.appendChild(contactCard1);
+  contactContainer.appendChild(contactCard2);
+  contactContainer.appendChild(contactCard3);
 }
 
 export {generateContact};
