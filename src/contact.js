@@ -8,3 +8,5 @@ function generateContact() {
   contentDiv.style.justifyContent = "initial";
   contentDiv.style.height = "83vh";
 }
+
+export {generateContact};
