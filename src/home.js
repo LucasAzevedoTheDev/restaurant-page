@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 
 function generateHomepage() {
-  
+
   const containerDiv = document.createElement("div");
   containerDiv.classList.add("container-div");
   contentDiv.appendChild(containerDiv);

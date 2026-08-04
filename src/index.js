@@ -15,8 +15,15 @@ const exploreButton = document.querySelector(".explore-button");
 exploreButton.addEventListener("click", () => {
   generateMenu();
   menuButton.classList.add("active-button");
-})
+  
+  //RESET OTHER BUTTONS 
+  homeButton.classList.remove("active-button");
+  aboutButton.classList.remove("active-button");
+  contactButton.classList.remove("active-button");
+});
 
-// generateMenu();
-// generateAbout();
-// generateContact();
+menuButton.addEventListener("click", () => {
+  generateMenu();
+  menuButton.classList.add("active-button");
+});
+
