@@ -196,6 +196,14 @@ footer p {
 
 /* MENU CSS */
 .menu-header {
-  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Aligns horizontally */
+  align-items: center;  
+  padding-top: 20px;
+}
+
+.first-section { 
+  
 }
 
