@@ -9,6 +9,7 @@ function generateMenu() {
   contentDiv.style.display = "block";
   contentDiv.style.alignItems = "initial";
   contentDiv.style.justifyContent = "initial";
+  contentDiv.style.height = "auto";
 
   const menuContainer = document.createElement("div");
   menuContainer.classList.add("menu-container");
