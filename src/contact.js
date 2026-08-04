@@ -8,10 +8,14 @@ function generateContact() {
   contentDiv.style.justifyContent = "initial";
   contentDiv.style.height = "83vh";
 
+  const contactHeader = document.createElement("div");
+  contactHeader.classList.add("contact-header");
+
   const contactContainer = document.createElement("div");
   contactContainer.classList.add("contact-container");
-  contentDiv.appendChild(contactContainer);
 
+  contentDiv.appendChild(contactHeader);
+  contentDiv.appendChild(contactContainer);
   
 }
 
