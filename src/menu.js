@@ -116,6 +116,36 @@ function generateMenu() {
   firstSection.appendChild(firstSectionPlate3);
   firstSection.appendChild(firstSectionPlate4);
   menuContainer.appendChild(firstSection);
+
+  const secondSection = document.createElement("div");
+  secondSection.classList.add("first-section");
+
+  const secondSectionH2 = document.createElement("h2");
+  secondSectionH2.classList.add("h2-menu");
+  secondSectionH2.textContent = "Section 2: Earth & Garden";
+  secondSection.appendChild(secondSectionH2);
+
+  const secondSectionPlate1 = document.createElement("div");
+  secondSectionPlate1.classList.add("section-plate");
+
+  const secondSectionPlate1Head = document.createElement("h3");
+  secondSectionPlate1Head.classList.add("plate-head");
+  secondSectionPlate1Head.textContent = "Smashed Rustic Potatoes";
+
+  const secondSectionPlate1Description = document.createElement("p");
+  secondSectionPlate1Description.classList.add("plate-description");
+  secondSectionPlate1Description.textContent = "Description: Oven-roasted in their skins with roasted garlic oil, fresh rosemary, and torched parmesan shavings.";
+
+  const secondSectionPlate1Price = document.createElement("p");
+  secondSectionPlate1Price.classList.add("plate-price");
+  secondSectionPlate1Price.textContent = "Price: $18";
+
+  secondSectionPlate1.appendChild(secondSectionPlate1Head);
+  secondSectionPlate1.appendChild(secondSectionPlate1Description);
+  secondSectionPlate1.appendChild(secondSectionPlate1Price);
+  
+  secondSection.appendChild(secondSectionPlate1);
+  menuContainer.appendChild(secondSection);
 }
 
 export {generateMenu}
