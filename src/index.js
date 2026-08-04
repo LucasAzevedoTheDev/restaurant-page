@@ -5,6 +5,10 @@ import {generateAbout} from "./about.js";
 import {generateContact} from "./contact.js";
 
 generateHomepage();
-generateMenu();
-generateAbout();
-generateContact();
+
+const exploreButton = document.querySelector(".explore-button");
+exploreButton.addEventListener("click", generateMenu);
+
+// generateMenu();
+// generateAbout();
+// generateContact();
