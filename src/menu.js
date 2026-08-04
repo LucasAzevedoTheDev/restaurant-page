@@ -25,6 +25,7 @@ function generateMenu() {
 
   headerDiv.appendChild(h1Text);
   headerDiv.appendChild(menuSubtitle);
+  menuContainer.appendChild(headerDiv);
 
   const firstSection = document.createElement("div");
   firstSection.classList.add("first-section");
@@ -85,19 +86,36 @@ function generateMenu() {
 
   const firstSectionPlate3Price = document.createElement("p");
   firstSectionPlate3Price.classList.add("plate-price");
-  firstSectionPlate3Price.textContent = "Price: $85";
+  firstSectionPlate3Price.textContent = "Price: $46";
 
   firstSectionPlate3.appendChild(firstSectionPlate3Head);
   firstSectionPlate3.appendChild(firstSectionPlate3Description);
   firstSectionPlate3.appendChild(firstSectionPlate3Price);
 
+  const firstSectionPlate4 = document.createElement("div");
+  firstSectionPlate4.classList.add("section-plate");
+
+  const firstSectionPlate4Head = document.createElement("h3");
+  firstSectionPlate4Head.classList.add("plate-head");
+  firstSectionPlate4Head.textContent = "Picanha on Live Embers";
+
+  const firstSectionPlate4Description = document.createElement("p");
+  firstSectionPlate4Description.classList.add("plate-description");
+  firstSectionPlate4Description.textContent = "Description: Selected cuts of picanha grilled on rustic skewers, served with sea salt and roasted garlic.";
+
+  const firstSectionPlate4Price = document.createElement("p");
+  firstSectionPlate4Price.classList.add("plate-price");
+  firstSectionPlate4Price.textContent = "Price: $48";
+
+  firstSectionPlate4.appendChild(firstSectionPlate4Head);
+  firstSectionPlate4.appendChild(firstSectionPlate4Description);
+  firstSectionPlate4.appendChild(firstSectionPlate4Price);
+
   firstSection.appendChild(firstSectionPlate1);
   firstSection.appendChild(firstSectionPlate2);
   firstSection.appendChild(firstSectionPlate3);
-
-  menuContainer.appendChild(headerDiv);
+  firstSection.appendChild(firstSectionPlate4);
   menuContainer.appendChild(firstSection);
-  contentDiv.appendChild(menuContainer);
 }
 
 export {generateMenu}
