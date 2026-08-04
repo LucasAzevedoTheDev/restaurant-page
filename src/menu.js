@@ -1,9 +1,8 @@
 const contentDiv = document.querySelector("#content");
 
 function generateMenu() {
-  contentDiv.innerHTML = "";
-
   // Reset #content style
+  contentDiv.innerHTML = "";
   contentDiv.style.display = "block";
   contentDiv.style.alignItems = "initial";
   contentDiv.style.justifyContent = "initial";

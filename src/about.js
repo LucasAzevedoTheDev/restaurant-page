@@ -1,6 +1,8 @@
 const contentDiv = document.querySelector("#content");
 
 function generateAbout() {
+  // Reset #content style
+  contentDiv.innerHTML = "";
   contentDiv.style.display = "block";
   contentDiv.style.alignItems = "initial";
   contentDiv.style.justifyContent = "initial";

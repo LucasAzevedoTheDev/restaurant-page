@@ -5,3 +5,4 @@ import {generateAbout} from "./about.js";
  
 generateHomepage();
 generateMenu();
+generateAbout();
