@@ -144,7 +144,47 @@ function generateMenu() {
   secondSectionPlate1.appendChild(secondSectionPlate1Description);
   secondSectionPlate1.appendChild(secondSectionPlate1Price);
   
+  const secondSectionPlate2 = document.createElement("div");
+  secondSectionPlate2.classList.add("section-plate");
+
+  const secondSectionPlate2Head = document.createElement("h3");
+  secondSectionPlate2Head.classList.add("plate-head");
+  secondSectionPlate2Head.textContent = "Embers Vegetables";
+
+  const secondSectionPlate2Description = document.createElement("p");
+  secondSectionPlate2Description.classList.add("plate-description");
+  secondSectionPlate2Description.textContent = "Description: A mix of asparagus, baby carrots, and red onions charred over live fire with rustic chimichurri sauce.";
+
+  const secondSectionPlate2Price = document.createElement("p");
+  secondSectionPlate2Price.classList.add("plate-price");
+  secondSectionPlate2Price.textContent = "Price: $22";
+
+  secondSectionPlate2.appendChild(secondSectionPlate2Head);
+  secondSectionPlate2.appendChild(secondSectionPlate2Description);
+  secondSectionPlate2.appendChild(secondSectionPlate2Price);
+
+  const secondSectionPlate3 = document.createElement("div");
+  secondSectionPlate3.classList.add("section-plate");
+
+  const secondSectionPlate3Head = document.createElement("h3");
+  secondSectionPlate3Head.classList.add("plate-head");
+  secondSectionPlate3Head.textContent = "House Farofa";
+
+  const secondSectionPlate3Description = document.createElement("p");
+  secondSectionPlate3Description.classList.add("plate-description");
+  secondSectionPlate3Description.textContent = "Description: Cassava flour toasted in bottled butter with crispy onion, artisan bacon, and nuts.";
+
+  const secondSectionPlate3Price = document.createElement("p");
+  secondSectionPlate3Price.classList.add("plate-price");
+  secondSectionPlate3Price.textContent = "Price: $15";
+
+  secondSectionPlate3.appendChild(secondSectionPlate3Head);
+  secondSectionPlate3.appendChild(secondSectionPlate3Description);
+  secondSectionPlate3.appendChild(secondSectionPlate3Price);
+
   secondSection.appendChild(secondSectionPlate1);
+  secondSection.appendChild(secondSectionPlate2);
+  secondSection.appendChild(secondSectionPlate3);
   menuContainer.appendChild(secondSection);
 }
 
