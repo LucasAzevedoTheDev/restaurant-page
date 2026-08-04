@@ -209,7 +209,7 @@ h1 {
 .menu-header {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Aligns horizontally */
+  justify-content: center; 
   align-items: center;  
   padding-top: 20px;
 }
