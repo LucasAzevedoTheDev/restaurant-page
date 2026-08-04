@@ -39,6 +39,7 @@ function generateMenu() {
   const firstSectionPlatesDiv = document.createElement("div");
   firstSectionPlatesDiv.classList.add("plates-container");
   firstSection.appendChild(firstSectionPlatesDiv);
+
   const firstSectionPlate1 = document.createElement("div");
   firstSectionPlate1.classList.add("section-plate");
 
@@ -129,6 +130,10 @@ function generateMenu() {
   secondSectionH2.textContent = "Section 2: Earth & Garden";
   secondSection.appendChild(secondSectionH2);
 
+  const secondSectionPlatesDiv = document.createElement("div");
+  secondSectionPlatesDiv.classList.add("plates-container");
+  secondSection.appendChild(secondSectionPlatesDiv);
+
   const secondSectionPlate1 = document.createElement("div");
   secondSectionPlate1.classList.add("section-plate");
 
@@ -186,9 +191,9 @@ function generateMenu() {
   secondSectionPlate3.appendChild(secondSectionPlate3Description);
   secondSectionPlate3.appendChild(secondSectionPlate3Price);
 
-  secondSection.appendChild(secondSectionPlate1);
-  secondSection.appendChild(secondSectionPlate2);
-  secondSection.appendChild(secondSectionPlate3);
+  secondSectionPlatesDiv.appendChild(secondSectionPlate1);
+  secondSectionPlatesDiv.appendChild(secondSectionPlate2);
+  secondSectionPlatesDiv.appendChild(secondSectionPlate3);
   menuContainer.appendChild(secondSection);
 
   const thirdSection = document.createElement("div");
