@@ -13,6 +13,7 @@
 body {
   font-family: var(--font-body);
   background-color: #1a1a1a;
+  color: #fefae0;
 }
 
 header {
