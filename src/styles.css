@@ -12,7 +12,7 @@
 
 body {
   font-family: var(--font-body);
-  background-color: #0f0f0f;
+  background-color: #1a1a1a;
 }
 
 header {
@@ -253,6 +253,18 @@ h1 {
 .plate-price {
   font-style: italic;
   font-weight: 600;
+}
+
+/* ABOUT CSS */
+.about-container {
+  background: rgba(30, 30, 30, 0.7); /* Fundo preto transparente (efeito glass) */
+  backdrop-filter: blur(10px); /* Desfoca o que está atrás do card (efeito glass) */
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Borda fina na cor dourada/bronze da logo, bem suave */
+  border-radius: 12px; /* Cantos levemente mais arredondados */
+  padding: 40px; /* Mais respiro interno */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: 60px auto;
 }
 
 
