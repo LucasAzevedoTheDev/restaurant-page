@@ -26,7 +26,7 @@ function generateContact() {
   contentDiv.appendChild(contactContainer);
 
   const contactCard1 = document.createElement("div");
-  contactCard1.classList.add("about-card");
+  contactCard1.classList.add("contact-card");
 
   const contactCard1Head = document.createElement("h3");
   contactCard1Head.textContent = "Location & Hours";
@@ -46,7 +46,7 @@ function generateContact() {
   contactCard1.appendChild(contactCard1P3);
 
   const contactCard2 = document.createElement("div");
-  contactCard2.classList.add("about-card");
+  contactCard2.classList.add("contact-card");
 
   const contactCard2Head = document.createElement("h3");
   contactCard2Head.textContent = "Reservations & Support";
@@ -62,7 +62,7 @@ function generateContact() {
   contactCard2.appendChild(contactCard2P2);
 
   const contactCard3 = document.createElement("div");
-  contactCard3.classList.add("about-card");
+  contactCard3.classList.add("contact-card");
 
   const contactCard3Head = document.createElement("h3");
   contactCard3Head.textContent = "Private Gatherings";

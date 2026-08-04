@@ -6,7 +6,7 @@ function generateAbout() {
   contentDiv.style.display = "block";
   contentDiv.style.alignItems = "initial";
   contentDiv.style.justifyContent = "initial";
-  contentDiv.style.height = "80vh";
+  contentDiv.style.height = "auto";
 
   const aboutContainer = document.createElement("div");
   aboutContainer.classList.add("about-container");

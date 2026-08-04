@@ -25,6 +25,10 @@ exploreButton.addEventListener("click", () => {
 menuButton.addEventListener("click", () => {
   generateMenu();
   menuButton.classList.add("active-button");
+
+  homeButton.classList.remove("active-button");
+  aboutButton.classList.remove("active-button");
+  contactButton.classList.remove("active-button");
 });
 
 aboutButton.addEventListener("click", () => {
@@ -44,3 +48,8 @@ contactButton.addEventListener("click", () => {
   menuButton.classList.remove("active-button");
   aboutButton.classList.remove("active-button");
 });
+
+homeButton.addEventListener("click", () => {
+  generateHomepage();
+  homeButton.classList.add("active-button");
+})
