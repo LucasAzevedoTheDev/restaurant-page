@@ -27,3 +27,20 @@ menuButton.addEventListener("click", () => {
   menuButton.classList.add("active-button");
 });
 
+aboutButton.addEventListener("click", () => {
+  generateAbout();
+  aboutButton.classList.add("active-button");
+
+  homeButton.classList.remove("active-button");
+  menuButton.classList.remove("active-button");
+  contactButton.classList.remove("active-button");
+});
+
+contactButton.addEventListener("click", () => {
+  generateContact();
+  contactButton.classList.add("active-button");
+
+  homeButton.classList.remove("active-button");
+  menuButton.classList.remove("active-button");
+  aboutButton.classList.remove("active-button");
+});
