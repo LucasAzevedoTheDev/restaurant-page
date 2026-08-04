@@ -31,11 +31,14 @@ function generateMenu() {
   const firstSection = document.createElement("div");
   firstSection.classList.add("first-section");
 
-  const FirstSectionH2 = document.createElement("h2");
-  FirstSectionH2.classList.add("h2-menu");
-  FirstSectionH2.textContent = "Section 1: Fire & Embers";
-  firstSection.appendChild(FirstSectionH2);
+  const firstSectionH2 = document.createElement("h2");
+  firstSectionH2.classList.add("h2-menu");
+  firstSectionH2.textContent = "Section 1: Fire & Embers";
+  firstSection.appendChild(firstSectionH2);
 
+  const firstSectionPlatesDiv = document.createElement("div");
+  firstSectionPlatesDiv.classList.add("plates-container");
+  firstSection.appendChild(firstSectionPlatesDiv);
   const firstSectionPlate1 = document.createElement("div");
   firstSectionPlate1.classList.add("section-plate");
 
@@ -112,10 +115,10 @@ function generateMenu() {
   firstSectionPlate4.appendChild(firstSectionPlate4Description);
   firstSectionPlate4.appendChild(firstSectionPlate4Price);
 
-  firstSection.appendChild(firstSectionPlate1);
-  firstSection.appendChild(firstSectionPlate2);
-  firstSection.appendChild(firstSectionPlate3);
-  firstSection.appendChild(firstSectionPlate4);
+  firstSectionPlatesDiv.appendChild(firstSectionPlate1);
+  firstSectionPlatesDiv.appendChild(firstSectionPlate2);
+  firstSectionPlatesDiv.appendChild(firstSectionPlate3);
+  firstSectionPlatesDiv.appendChild(firstSectionPlate4);
   menuContainer.appendChild(firstSection);
 
   const secondSection = document.createElement("div");
