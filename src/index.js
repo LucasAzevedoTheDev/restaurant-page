@@ -14,6 +14,7 @@ const contactButton = document.querySelector(".contact-button");
 const exploreButton = document.querySelector(".explore-button");
 exploreButton.addEventListener("click", () => {
   generateMenu();
+  menuButton.classList.add("active-button");
 })
 
 // generateMenu();
