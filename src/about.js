@@ -33,4 +33,4 @@ function generateAbout() {
   aboutCard.appendChild(aboutP3);
 }
 
-export{generateAbout};
+export {generateAbout};
