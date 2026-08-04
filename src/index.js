@@ -7,3 +7,4 @@ import {generateContact} from "./contact.js";
 generateHomepage();
 generateMenu();
 generateAbout();
+generateContact();
