@@ -26,13 +26,13 @@ function generateMenu() {
   headerDiv.appendChild(h1Text);
   headerDiv.appendChild(menuSubtitle);
 
-  const menuFirstSection = document.createElement("div");
-  menuFirstSection.classList.add("menu-first-section");
+  const firstSection = document.createElement("div");
+  firstSection.classList.add("first-section");
 
-  const menuFirstSectionH2 = document.createElement("h2");
-  menuFirstSectionH2.classList.add("h2-menu");
-  menuFirstSectionH2.textContent = "Section 1: Fire & Embers";
-  menuFirstSection.appendChild(menuFirstSectionH2);
+  const FirstSectionH2 = document.createElement("h2");
+  FirstSectionH2.classList.add("h2-menu");
+  FirstSectionH2.textContent = "Section 1: Fire & Embers";
+  firstSection.appendChild(FirstSectionH2);
 
   const firstSectionFP = document.createElement("div");
   firstSectionFP.classList.add("section-plate");
@@ -52,10 +52,52 @@ function generateMenu() {
   firstSectionFP.appendChild(firstSectionFPHead);
   firstSectionFP.appendChild(firstSectionFPDescription);
   firstSectionFP.appendChild(firstSectionFPPrice);
-  menuFirstSection.appendChild(firstSectionFP);
+
+  const firstSectionSP = document.createElement("div");
+  firstSectionSP.classList.add("section-plate");
+
+  const firstSectionSPHead = document.createElement("h3");
+  firstSectionSPHead.classList.add("plate-head");
+  firstSectionSPHead.textContent = "Rune Entrecôte";
+
+  const firstSectionSPDescription = document.createElement("p");
+  firstSectionSPDescription.classList.add("plate-description");
+  firstSectionSPDescription.textContent = "Description: Juicy ribeye seared on a cast-iron skillet, finished with a dark beer and juniper reduction.";
+
+  const firstSectionSPPrice = document.createElement("p");
+  firstSectionSPPrice.classList.add("plate-price");
+  firstSectionSPPrice.textContent = "Price: $52";
+
+  firstSectionSP.appendChild(firstSectionSPHead);
+  firstSectionSP.appendChild(firstSectionSPDescription);
+  firstSectionSP.appendChild(firstSectionSPPrice);
+
+  const firstSectionTP = document.createElement("div");
+  firstSectionTP.classList.add("section-plate");
+
+  const firstSectionTPHead = document.createElement("h3");
+  firstSectionTPHead.classList.add("plate-head");
+  firstSectionTPHead.textContent = "Winter Ribs";
+
+  const firstSectionTPDescription = document.createElement("p");
+  firstSectionTPDescription.classList.add("plate-description");
+  firstSectionTPDescription.textContent = "Description: Beef ribs slow-smoked for 12 hours over fruitwood, melting right at the touch of a fork.";
+
+  const firstSectionTPPrice = document.createElement("p");
+  firstSectionTPPrice.classList.add("plate-price");
+  firstSectionTPPrice.textContent = "Price: $85";
+
+  firstSectionTP.appendChild(firstSectionTPHead);
+  firstSectionTP.appendChild(firstSectionTPDescription);
+  firstSectionTP.appendChild(firstSectionTPPrice);
+  firstSectionTP.appendChild(firstSectionQPPrice);
+
+  firstSection.appendChild(firstSectionFP);
+  firstSection.appendChild(firstSectionSP);
+  // firstSection.appendChild(firstSectionTP);
 
   menuContainer.appendChild(headerDiv);
-  menuContainer.appendChild(menuFirstSection);
+  menuContainer.appendChild(firstSection);
   contentDiv.appendChild(menuContainer);
 }
 
