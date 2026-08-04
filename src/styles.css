@@ -203,6 +203,7 @@ footer p {
 
 h1 {
   font-family: var(--font-heading);
+  font-size: 3rem;
 }
 
 .menu-header {
@@ -223,6 +224,7 @@ h1 {
 
 .h2-menu {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .section-plate {
@@ -236,10 +238,6 @@ h1 {
   width: 90%;
   padding: 10px;
   border-radius: 6px;
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  align-items: baseline;
 }
 
 .plate-head {
