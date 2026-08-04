@@ -7,6 +7,12 @@ function generateContact() {
   contentDiv.style.alignItems = "initial";
   contentDiv.style.justifyContent = "initial";
   contentDiv.style.height = "83vh";
+
+  const contactContainer = document.createElement("div");
+  contactContainer.classList.add("contact-container");
+  contentDiv.appendChild(contactContainer);
+
+  
 }
 
 export {generateContact};
