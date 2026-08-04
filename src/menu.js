@@ -119,7 +119,7 @@ function generateMenu() {
   menuContainer.appendChild(firstSection);
 
   const secondSection = document.createElement("div");
-  secondSection.classList.add("first-section");
+  secondSection.classList.add("second-section");
 
   const secondSectionH2 = document.createElement("h2");
   secondSectionH2.classList.add("h2-menu");
@@ -187,6 +187,9 @@ function generateMenu() {
   secondSection.appendChild(secondSectionPlate2);
   secondSection.appendChild(secondSectionPlate3);
   menuContainer.appendChild(secondSection);
+
+  const thirdSection = document.createElement("div");
+  thirdSection.classList.add("third-section");
 }
 
 export {generateMenu}
