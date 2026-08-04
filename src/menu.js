@@ -34,67 +34,66 @@ function generateMenu() {
   FirstSectionH2.textContent = "Section 1: Fire & Embers";
   firstSection.appendChild(FirstSectionH2);
 
-  const firstSectionFP = document.createElement("div");
-  firstSectionFP.classList.add("section-plate");
+  const firstSectionPlate1 = document.createElement("div");
+  firstSectionPlate1.classList.add("section-plate");
 
-  const firstSectionFPHead = document.createElement("h3");
-  firstSectionFPHead.classList.add("plate-head");
-  firstSectionFPHead.textContent = "The Clan's Tomahawk";
+  const firstSectionPlate1Head = document.createElement("h3");
+  firstSectionPlate1Head.classList.add("plate-head");
+  firstSectionPlate1Head.textContent = "The Clan's Tomahawk";
 
-  const firstSectionFPDescription = document.createElement("p");
-  firstSectionFPDescription.classList.add("plate-description");
-  firstSectionFPDescription.textContent = "Description: An imposing 1.2kg dry-aged cut, grilled over live fire with Maldon sea salt and smoked herb butter.";
+  const firstSectionPlate1Description = document.createElement("p");
+  firstSectionPlate1Description.classList.add("plate-description");
+  firstSectionPlate1Description.textContent = "Description: An imposing 1.2kg dry-aged cut, grilled over live fire with Maldon sea salt and smoked herb butter.";
 
-  const firstSectionFPPrice = document.createElement("p");
-  firstSectionFPPrice.classList.add("plate-price");
-  firstSectionFPPrice.textContent = "Price: $85";
+  const firstSectionPlate1Price = document.createElement("p");
+  firstSectionPlate1Price.classList.add("plate-price");
+  firstSectionPlate1Price.textContent = "Price: $85";
 
-  firstSectionFP.appendChild(firstSectionFPHead);
-  firstSectionFP.appendChild(firstSectionFPDescription);
-  firstSectionFP.appendChild(firstSectionFPPrice);
+  firstSectionPlate1.appendChild(firstSectionPlate1Head);
+  firstSectionPlate1.appendChild(firstSectionPlate1Description);
+  firstSectionPlate1.appendChild(firstSectionPlate1Price);
 
-  const firstSectionSP = document.createElement("div");
-  firstSectionSP.classList.add("section-plate");
+  const firstSectionPlate2 = document.createElement("div");
+  firstSectionPlate2.classList.add("section-plate");
 
-  const firstSectionSPHead = document.createElement("h3");
-  firstSectionSPHead.classList.add("plate-head");
-  firstSectionSPHead.textContent = "Rune Entrecôte";
+  const firstSectionPlate2Head = document.createElement("h3");
+  firstSectionPlate2Head.classList.add("plate-head");
+  firstSectionPlate2Head.textContent = "Rune Entrecôte";
 
-  const firstSectionSPDescription = document.createElement("p");
-  firstSectionSPDescription.classList.add("plate-description");
-  firstSectionSPDescription.textContent = "Description: Juicy ribeye seared on a cast-iron skillet, finished with a dark beer and juniper reduction.";
+  const firstSectionPlate2Description = document.createElement("p");
+  firstSectionPlate2Description.classList.add("plate-description");
+  firstSectionPlate2Description.textContent = "Description: Juicy ribeye seared on a cast-iron skillet, finished with a dark beer and juniper reduction.";
 
-  const firstSectionSPPrice = document.createElement("p");
-  firstSectionSPPrice.classList.add("plate-price");
-  firstSectionSPPrice.textContent = "Price: $52";
+  const firstSectionPlate2Price = document.createElement("p");
+  firstSectionPlate2Price.classList.add("plate-price");
+  firstSectionPlate2Price.textContent = "Price: $52";
 
-  firstSectionSP.appendChild(firstSectionSPHead);
-  firstSectionSP.appendChild(firstSectionSPDescription);
-  firstSectionSP.appendChild(firstSectionSPPrice);
+  firstSectionPlate2.appendChild(firstSectionPlate2Head);
+  firstSectionPlate2.appendChild(firstSectionPlate2Description);
+  firstSectionPlate2.appendChild(firstSectionPlate2Price);
 
-  const firstSectionTP = document.createElement("div");
-  firstSectionTP.classList.add("section-plate");
+  const firstSectionPlate3 = document.createElement("div");
+  firstSectionPlate3.classList.add("section-plate");
 
-  const firstSectionTPHead = document.createElement("h3");
-  firstSectionTPHead.classList.add("plate-head");
-  firstSectionTPHead.textContent = "Winter Ribs";
+  const firstSectionPlate3Head = document.createElement("h3");
+  firstSectionPlate3Head.classList.add("plate-head");
+  firstSectionPlate3Head.textContent = "Winter Ribs";
 
-  const firstSectionTPDescription = document.createElement("p");
-  firstSectionTPDescription.classList.add("plate-description");
-  firstSectionTPDescription.textContent = "Description: Beef ribs slow-smoked for 12 hours over fruitwood, melting right at the touch of a fork.";
+  const firstSectionPlate3Description = document.createElement("p");
+  firstSectionPlate3Description.classList.add("plate-description");
+  firstSectionPlate3Description.textContent = "Description: Beef ribs slow-smoked for 12 hours over fruitwood, melting right at the touch of a fork.";
 
-  const firstSectionTPPrice = document.createElement("p");
-  firstSectionTPPrice.classList.add("plate-price");
-  firstSectionTPPrice.textContent = "Price: $85";
+  const firstSectionPlate3Price = document.createElement("p");
+  firstSectionPlate3Price.classList.add("plate-price");
+  firstSectionPlate3Price.textContent = "Price: $85";
 
-  firstSectionTP.appendChild(firstSectionTPHead);
-  firstSectionTP.appendChild(firstSectionTPDescription);
-  firstSectionTP.appendChild(firstSectionTPPrice);
-  firstSectionTP.appendChild(firstSectionQPPrice);
+  firstSectionPlate3.appendChild(firstSectionPlate3Head);
+  firstSectionPlate3.appendChild(firstSectionPlate3Description);
+  firstSectionPlate3.appendChild(firstSectionPlate3Price);
 
-  firstSection.appendChild(firstSectionFP);
-  firstSection.appendChild(firstSectionSP);
-  // firstSection.appendChild(firstSectionTP);
+  firstSection.appendChild(firstSectionPlate1);
+  firstSection.appendChild(firstSectionPlate2);
+  firstSection.appendChild(firstSectionPlate3);
 
   menuContainer.appendChild(headerDiv);
   menuContainer.appendChild(firstSection);
