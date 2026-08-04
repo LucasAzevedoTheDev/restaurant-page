@@ -193,3 +193,9 @@ footer p {
   font-size: 0.9rem;
   font-family: var(--font-body, sans-serif)
 }
+
+/* MENU CSS */
+.menu-header {
+  background-color: grey;
+}
+

@@ -29,11 +29,34 @@ function generateMenu() {
   const menuFirstSection = document.createElement("div");
   menuFirstSection.classList.add("menu-first-section");
 
-  const firstSectionPlate = document.createElement(div);
-  firstSectionPlate.classList.add("first-section-plate");
+  const menuFirstSectionH2 = document.createElement("h2");
+  menuFirstSectionH2.classList.add("h2-menu");
+  menuFirstSectionH2.textContent = "Section 1: Fire & Embers";
+  menuFirstSection.appendChild(menuFirstSectionH2);
+
+  const firstSectionFP = document.createElement("div");
+  firstSectionFP.classList.add("section-plate");
+
+  const firstSectionFPHead = document.createElement("h3");
+  firstSectionFPHead.classList.add("plate-head");
+  firstSectionFPHead.textContent = "The Clan's Tomahawk";
+
+  const firstSectionFPDescription = document.createElement("p");
+  firstSectionFPDescription.classList.add("plate-description");
+  firstSectionFPDescription.textContent = "Description: An imposing 1.2kg dry-aged cut, grilled over live fire with Maldon sea salt and smoked herb butter.";
+
+  const firstSectionFPPrice = document.createElement("p");
+  firstSectionFPPrice.classList.add("plate-price");
+  firstSectionFPPrice.textContent = "Price: $85";
+
+  firstSectionFP.appendChild(firstSectionFPHead);
+  firstSectionFP.appendChild(firstSectionFPDescription);
+  firstSectionFP.appendChild(firstSectionFPPrice);
+  menuFirstSection.appendChild(firstSectionFP);
 
   menuContainer.appendChild(headerDiv);
   menuContainer.appendChild(menuFirstSection);
+  contentDiv.appendChild(menuContainer);
 }
 
 export {generateMenu}
