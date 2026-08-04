@@ -8,5 +8,6 @@ function generateAbout() {
   const aboutContainer = document.createElement("div");
   aboutContainer.classList.add("about-container");
   contentDiv.appendChild(aboutContainer);
-
 }
+
+export{generateAbout};

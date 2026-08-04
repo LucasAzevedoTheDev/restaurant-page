@@ -269,4 +269,4 @@ function generateMenu() {
   menuContainer.appendChild(thirdSection);
 }
 
-export {generateMenu}
+export {generateMenu};
