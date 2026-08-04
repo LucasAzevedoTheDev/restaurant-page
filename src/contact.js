@@ -6,10 +6,10 @@ function generateContact() {
   contentDiv.style.display = "block";
   contentDiv.style.alignItems = "initial";
   contentDiv.style.justifyContent = "initial";
-  contentDiv.style.height = "83vh";
+  contentDiv.style.height = "auto";
 
   const contactHeader = document.createElement("div");
-  contactHeader.classList.add("contact-header");
+  contactHeader.classList.add("menu-header");
   contentDiv.appendChild(contactHeader);
 
   const contactH1 = document.createElement("h1");
@@ -22,11 +22,12 @@ function generateContact() {
   contactHeader.appendChild(contactHead);
 
   const contactContainer = document.createElement("div");
-  contactContainer.classList.add("contact-container");
+  contactContainer.classList.add("plates-container");
   contentDiv.appendChild(contactContainer);
 
   const contactCard1 = document.createElement("div");
-  
+  contactCard1.classList.add("about-card");
+
   const contactCard1Head = document.createElement("h3");
   contactCard1Head.textContent = "Location & Hours";
 
@@ -45,7 +46,8 @@ function generateContact() {
   contactCard1.appendChild(contactCard1P3);
 
   const contactCard2 = document.createElement("div");
-  
+  contactCard2.classList.add("about-card");
+
   const contactCard2Head = document.createElement("h3");
   contactCard2Head.textContent = "Reservations & Support";
 
@@ -60,7 +62,8 @@ function generateContact() {
   contactCard2.appendChild(contactCard2P2);
 
   const contactCard3 = document.createElement("div");
-  
+  contactCard3.classList.add("about-card");
+
   const contactCard3Head = document.createElement("h3");
   contactCard3Head.textContent = "Private Gatherings";
 
