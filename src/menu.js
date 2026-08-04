@@ -190,6 +190,73 @@ function generateMenu() {
 
   const thirdSection = document.createElement("div");
   thirdSection.classList.add("third-section");
+
+  const thirdSectionH2 = document.createElement("h2");
+  thirdSectionH2.classList.add("h2-menu");
+  thirdSectionH2.textContent = "Section 3: Elixirs & Potions";
+  thirdSection.appendChild(thirdSectionH2);
+
+  const thirdSectionPlate1 = document.createElement("div");
+  thirdSectionPlate1.classList.add("section-plate");
+
+  const thirdSectionPlate1Head = document.createElement("h3");
+  thirdSectionPlate1Head.classList.add("plate-head");
+  thirdSectionPlate1Head.textContent = "Valhalla Smoked";
+
+  const thirdSectionPlate1Description = document.createElement("p");
+  thirdSectionPlate1Description.classList.add("plate-description");
+  thirdSectionPlate1Description.textContent = "Description: Our signature cocktail with bourbon, red vermouth, wild honey smoked on the spot with cinnamon, and an orange peel.";
+
+  const thirdSectionPlate1Price = document.createElement("p");
+  thirdSectionPlate1Price.classList.add("plate-price");
+  thirdSectionPlate1Price.textContent = "Price: $16";
+
+  thirdSectionPlate1.appendChild(thirdSectionPlate1Head);
+  thirdSectionPlate1.appendChild(thirdSectionPlate1Description);
+  thirdSectionPlate1.appendChild(thirdSectionPlate1Price);
+
+  const thirdSectionPlate2 = document.createElement("div");
+  thirdSectionPlate2.classList.add("section-plate");
+
+  const thirdSectionPlate2Head = document.createElement("h3");
+  thirdSectionPlate2Head.classList.add("plate-head");
+  thirdSectionPlate2Head.textContent = "Nordic Lager Beer";
+
+  const thirdSectionPlate2Description = document.createElement("p");
+  thirdSectionPlate2Description.classList.add("plate-description");
+  thirdSectionPlate2Description.textContent = "Description: House artisan pure malt, full-bodied, refreshing, and ideal for pairing with red meats.";
+
+  const thirdSectionPlate2Price = document.createElement("p");
+  thirdSectionPlate2Price.classList.add("plate-price");
+  thirdSectionPlate2Price.textContent = "Price: $9";
+
+  thirdSectionPlate2.appendChild(thirdSectionPlate2Head);
+  thirdSectionPlate2.appendChild(thirdSectionPlate2Description);
+  thirdSectionPlate2.appendChild(thirdSectionPlate2Price);
+
+  const thirdSectionPlate3 = document.createElement("div");
+  thirdSectionPlate3.classList.add("section-plate");
+
+  const thirdSectionPlate3Head = document.createElement("h3");
+  thirdSectionPlate3Head.classList.add("plate-head");
+  thirdSectionPlate3Head.textContent = "Gneiss Mineral Water (Still or Sparkling)";
+
+  const thirdSectionPlate3Description = document.createElement("p");
+  thirdSectionPlate3Description.classList.add("plate-description");
+  thirdSectionPlate3Description.textContent = "Description: Purified spring water served in an artisanal glass bottle.";
+
+  const thirdSectionPlate3Price = document.createElement("p");
+  thirdSectionPlate3Price.classList.add("plate-price");
+  thirdSectionPlate3Price.textContent = "Price: $6";
+
+  thirdSectionPlate3.appendChild(thirdSectionPlate3Head);
+  thirdSectionPlate3.appendChild(thirdSectionPlate3Description);
+  thirdSectionPlate3.appendChild(thirdSectionPlate3Price);
+
+  thirdSection.appendChild(thirdSectionPlate1);
+  thirdSection.appendChild(thirdSectionPlate2);
+  thirdSection.appendChild(thirdSectionPlate3);
+  menuContainer.appendChild(thirdSection);
 }
 
 export {generateMenu}
