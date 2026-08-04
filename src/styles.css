@@ -257,16 +257,20 @@ h1 {
 
 /* ABOUT CSS */
 .about-container {
-  background: rgba(30, 30, 30, 0.7); /* Fundo preto transparente (efeito glass) */
-  backdrop-filter: blur(10px); /* Desfoca o que está atrás do card (efeito glass) */
-  border: 1px solid rgba(212, 175, 55, 0.3); /* Borda fina na cor dourada/bronze da logo, bem suave */
-  border-radius: 12px; /* Cantos levemente mais arredondados */
-  padding: 40px; /* Mais respiro interno */
+  background: rgba(30, 30, 30, 0.7); 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(212, 175, 55, 0.3); 
+  border-radius: 12px; 
+  padding: 50px; 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   width: 50%;
   margin: 60px auto;
 }
 
+.about-container p {
+  width: 100%;
+  margin-top: 15px;
+}
 
 
 
